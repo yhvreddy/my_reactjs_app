@@ -8,10 +8,12 @@ function ExpenseItem (props) {
     const {title, amount, date} = props;
 
     return(
-        <ExpenseCard className='expense-item'>
-            <ExpenseDate date={date} />
-            <ExpensesDescription title={title} amount={amount}/>
-        </ExpenseCard>
+        <li>
+            <ExpenseCard className='expense-item'>
+                <ExpenseDate date={date} />
+                <ExpensesDescription title={title} amount={amount}/>
+            </ExpenseCard>
+        </li>
     )
 }
 

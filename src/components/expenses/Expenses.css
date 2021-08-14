@@ -95,7 +95,7 @@
     padding: 0.5rem;
     border-radius: 6px;
     border: 1px solid #ccc;
-    width: 20rem;
+    width: 23.5rem;
     max-width: 100%;
 }
   
@@ -149,7 +149,7 @@
 
 .expenses-filter {
     color: white;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
 }
   
 .expenses-filter__control {
@@ -179,6 +179,57 @@
     color: white;
     padding: 15px 0px;
     margin: 0;
+}
+
+.expenses-list {
+    list-style: none;
+    padding: 0;
+}
+  
+.expenses-list__fallback {
+    color: white;
+    text-align: center;
+}
+
+.chart {
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #f8dfff;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    height: 10rem;
+}
+
+.chart-bar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.chart-bar__inner {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #313131;
+    border-radius: 12px;
+    background-color: #c3b4f3;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+  
+.chart-bar__fill {
+    background-color: #4826b9;
+    width: 100%;
+    transition: all 0.3s ease-out;
+}
+  
+.chart-bar__label {
+    font-weight: bold;
+    font-size: 0.5rem;
+    text-align: center;
 }
 
 @media (min-width: 580px) {
